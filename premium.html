@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plans - Nexio Discord Bot</title>
+    <meta name="description" content="Unlock advanced features with Nexio premium plans. Monthly subscriptions via Ko-fi or lifetime keys via support server.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F0A1A',
+                        card: '#1A1429',
+                        accent: '#C77DFF',
+                        'accent-hover': '#9D4EDD'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-midnight text-white">
+    <nav class="sticky top-0 z-50 bg-midnight/95 backdrop-blur-sm border-b border-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-accent">Nexio</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent transition">Home</a>
+                    <a href="commands.html" class="text-white hover:text-accent transition">Commands</a>
+                    <a href="premium.html" class="text-white hover:text-accent transition">Premium</a>
+                    <a href="support.html" class="text-white hover:text-accent transition">Support</a>
+                    <a href="legal.html" class="text-white hover:text-accent transition">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-midnight">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Home</a>
+                <a href="commands.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Commands</a>
+                <a href="premium.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Premium</a>
+                <a href="support.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Support</a>
+                <a href="legal.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6 text-center">Premium Plans</h1>
+            <p class="text-center text-xl text-gray-300 mb-12">Monthly via Ko-fi. Lifetime via support server.</p>
+
+            <div class="overflow-x-auto mb-16">
+                <table class="w-full bg-card border border-card rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="bg-midnight">
+                            <th class="px-4 py-4 text-left text-sm font-semibold">Feature</th>
+                            <th class="px-4 py-4 text-center text-sm font-semibold">Free<br><span class="text-xs font-normal text-gray-400">$0/forever</span></th>
+                            <th class="px-4 py-4 text-center text-sm font-semibold text-accent">Basic<br><span class="text-xs font-normal text-gray-400">$3/mo</span></th>
+                            <th class="px-4 py-4 text-center text-sm font-semibold text-accent">Plus<br><span class="text-xs font-normal text-gray-400">$5/mo</span></th>
+                            <th class="px-4 py-4 text-center text-sm font-semibold text-accent">Pro<br><span class="text-xs font-normal text-gray-400">$10/mo</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-midnight">
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Basic moderation</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Leveling system</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Standard rank cards</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Fun commands</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Custom rank card colors</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                            <td class="px-4 py-3 text-center text-sm">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Priority support</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Custom branding</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Advanced autoresponders</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Extended shop options</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Priority command queue</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Custom bot status</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Dedicated support channel</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Custom rank card backgrounds</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Extended leveling rewards</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Early access to features</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Premium role in support server</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Custom command aliases</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm">Analytics dashboard</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-gray-600">—</td>
+                            <td class="px-4 py-3 text-center text-sm text-accent">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-card border border-card rounded-lg p-8 mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-accent">Monthly (Ko-fi)</h2>
+                <div class="space-y-3 mb-6 text-gray-300">
+                    <p><strong>Basic:</strong> $3/mo → <a href="https://ko-fi.com/summary/526bf852-3092-40a0-b86a-1f6296088990" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover underline">Subscribe on Ko-fi</a></p>
+                    <p><strong>Plus:</strong> $5/mo → <a href="https://ko-fi.com/summary/508bf8ea-3b9f-4421-8191-a5d022d96475" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover underline">Subscribe on Ko-fi</a></p>
+                    <p><strong>Pro:</strong> $10/mo → <a href="https://ko-fi.com/summary/bf79a95b-d3bb-4920-be6e-95ab5de26235" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover underline">Subscribe on Ko-fi</a></p>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4 text-accent">Lifetime (Support Server)</h2>
+                <p class="text-gray-300 mb-4"><strong>Basic:</strong> $19.99 | <strong>Plus:</strong> $39.99 | <strong>Pro:</strong> $59.99</p>
+                <p class="text-gray-300 mb-6">Join the server and open a ticket to buy.</p>
+
+                <a href="https://discord.gg/vMWuDvk4dZ" target="_blank" rel="noopener noreferrer" class="inline-block bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-3 rounded-lg transition">
+                    Join Support Server
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-card border-t border-midnight py-8 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Nexio &bull; Built with Python by Mars &bull; <a href="https://discord.gg/vMWuDvk4dZ" class="text-accent hover:text-accent-hover transition">Support & Lifetime</a> &bull; <a href="https://ko-fi.com/uximixmars" class="text-accent hover:text-accent-hover transition">Monthly on Ko-fi</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

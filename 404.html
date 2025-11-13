@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found - Nexio</title>
+    <meta name="description" content="Page not found. Navigate back to the Nexio Discord bot website.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F0A1A',
+                        card: '#1A1429',
+                        accent: '#C77DFF',
+                        'accent-hover': '#9D4EDD'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-midnight text-white">
+    <nav class="sticky top-0 z-50 bg-midnight/95 backdrop-blur-sm border-b border-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-accent">Nexio</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent transition">Home</a>
+                    <a href="commands.html" class="text-white hover:text-accent transition">Commands</a>
+                    <a href="premium.html" class="text-white hover:text-accent transition">Premium</a>
+                    <a href="support.html" class="text-white hover:text-accent transition">Support</a>
+                    <a href="legal.html" class="text-white hover:text-accent transition">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-midnight">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Home</a>
+                <a href="commands.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Commands</a>
+                <a href="premium.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Premium</a>
+                <a href="support.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Support</a>
+                <a href="legal.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="mb-8">
+                <h1 class="text-8xl sm:text-9xl font-bold text-accent mb-4">404</h1>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Page Not Found</h2>
+                <p class="text-xl text-gray-300 mb-12">Sorry, we couldn't find that page. Let's get you back on track.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <a href="index.html" class="bg-accent hover:bg-accent-hover text-white font-semibold px-6 py-4 rounded-lg transition transform hover:scale-105">
+                    Go Home
+                </a>
+                <a href="commands.html" class="bg-card hover:bg-midnight border border-card text-white font-semibold px-6 py-4 rounded-lg transition transform hover:scale-105">
+                    View Commands
+                </a>
+                <a href="premium.html" class="bg-card hover:bg-midnight border border-card text-white font-semibold px-6 py-4 rounded-lg transition transform hover:scale-105">
+                    Premium Plans
+                </a>
+                <a href="https://discord.gg/vMWuDvk4dZ" target="_blank" rel="noopener noreferrer" class="bg-card hover:bg-midnight border border-card text-white font-semibold px-6 py-4 rounded-lg transition transform hover:scale-105">
+                    Support Server
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-card border-t border-midnight py-8 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Nexio &bull; Built with Python by Mars &bull; <a href="https://discord.gg/vMWuDvk4dZ" class="text-accent hover:text-accent-hover transition">Support & Lifetime</a> &bull; <a href="https://ko-fi.com/uximixmars" class="text-accent hover:text-accent-hover transition">Monthly on Ko-fi</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

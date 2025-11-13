@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands - Nexio Discord Bot</title>
+    <meta name="description" content="Browse all available commands for Nexio Discord bot including moderation, leveling, fun, and utility commands.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0F0A1A',
+                        card: '#1A1429',
+                        accent: '#C77DFF',
+                        'accent-hover': '#9D4EDD'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-midnight text-white">
+    <nav class="sticky top-0 z-50 bg-midnight/95 backdrop-blur-sm border-b border-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-accent">Nexio</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent transition">Home</a>
+                    <a href="commands.html" class="text-white hover:text-accent transition">Commands</a>
+                    <a href="premium.html" class="text-white hover:text-accent transition">Premium</a>
+                    <a href="support.html" class="text-white hover:text-accent transition">Support</a>
+                    <a href="legal.html" class="text-white hover:text-accent transition">Legal</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-midnight">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Home</a>
+                <a href="commands.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Commands</a>
+                <a href="premium.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Premium</a>
+                <a href="support.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Support</a>
+                <a href="legal.html" class="block px-3 py-2 text-white hover:text-accent hover:bg-midnight rounded transition">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-12 text-center">Commands</h1>
+
+            <div class="space-y-4">
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Moderation</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">kick</code> / <code class="bg-midnight px-2 py-1 rounded text-accent">k</code> – Kick a member from the server</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">ban</code> / <code class="bg-midnight px-2 py-1 rounded text-accent">b</code> – Ban a member from the server</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">mute</code> / <code class="bg-midnight px-2 py-1 rounded text-accent">m</code> – Mute a member in the server</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">clear</code> / <code class="bg-midnight px-2 py-1 rounded text-accent">purge</code> – Clear messages from a channel</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Leveling</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rank</code> – View your current rank and level</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">lb</code> – View the server leaderboard</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rlevel add</code> – Add a role reward for reaching a level</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rlevel remove</code> – Remove a role reward</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rlevel list</code> – List all role rewards</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rankcard setbg</code> – Set custom rank card background</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">rankcard setcolors</code> – Customize rank card colors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Fun</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">meme</code> – Get a random meme</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">8ball</code> – Ask the magic 8ball a question</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">joke</code> – Get a random joke</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Utility</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">help</code> – View all available commands</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">serverinfo</code> – Get information about the server</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">userinfo</code> – Get information about a user</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">poll</code> – Create a poll for members to vote on</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">setselfprefix</code> – Set a custom command prefix for yourself</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Partners</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">partner-list</code> – View all server partners</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">affiliate-list</code> – View all server affiliates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-card border border-card rounded-lg overflow-hidden">
+                    <button class="accordion-btn w-full text-left px-6 py-4 flex justify-between items-center hover:bg-midnight transition">
+                        <span class="text-xl font-semibold text-accent">Shop</span>
+                        <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden px-6 pb-4">
+                        <ul class="space-y-2 text-gray-300">
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">addshopitem</code> – Add a new item to the server shop</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">editshopitem</code> – Edit an existing shop item</li>
+                            <li><code class="bg-midnight px-2 py-1 rounded text-accent">removeshopitem</code> – Remove an item from the shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-card border-t border-midnight py-8 px-4 sm:px-6 lg:px-8 mt-20">
+        <div class="max-w-7xl mx-auto text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Nexio &bull; Built with Python by Mars &bull; <a href="https://discord.gg/vMWuDvk4dZ" class="text-accent hover:text-accent-hover transition">Support & Lifetime</a> &bull; <a href="https://ko-fi.com/uximixmars" class="text-accent hover:text-accent-hover transition">Monthly on Ko-fi</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
