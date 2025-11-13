@@ -1,0 +1,182 @@
+Build a **multi-page, lightweight static website** for my Discord bot **Nexio** using HTML + Tailwind CSS (via CDN). **Fully optimized for GitHub Pages deployment**:
+
+- **Static HTML/CSS/JS only** — no server-side code  
+- Deploy from `gh-pages` branch  
+- **Include custom `404.html` fallback in root** (critical for multi-page routing)  
+- Use Jekyll if helpful (include `_config.yml`)  
+- All files <100MB each, total repo <1GB  
+- Public repo ready  
+- HTTPS & custom domains supported  
+- No prohibited content (no malware, no illegal content)  
+- Follow all GitHub Pages protocols, restrictions, and requirements: https://docs.github.com/en/pages  
+
+Bot Details:
+- Name: Nexio
+- Developer: Mars
+- Built with: Python on Visual Studio Code
+- Invite: https://discord.com/oauth2/authorize?client_id=1425576944426160231
+- Support Server: https://discord.gg/vMWuDvk4dZ
+- Ko-fi Monthly Links:
+  - Basic: https://ko-fi.com/summary/526bf852-3092-40a0-b86a-1f6296088990
+  - Plus: https://ko-fi.com/summary/508bf8ea-3b9f-4421-8191-a5d022d96475
+  - Pro: https://ko-fi.com/summary/bf79a95b-d3bb-4920-be6e-95ab5de26235
+
+=== DOWNTOWN PURPLE THEME (VISUAL ONLY) ===
+- Background: #0F0A1A (deep midnight)
+- Text: #FFFFFF (clean white)
+- Accent: #C77DFF (electric purple)
+- Cards: #1A1429 with subtle border and shadow
+- Buttons: solid #C77DFF, white text, hover: #9D4EDD
+- Font: 'Inter', sans-serif (clean, modern)
+- Layout: generous spacing, card-based, mobile-first
+- No glow, no pulse, no animations except smooth scroll
+
+=== PAGES (5 + 404) ===
+1. **index.html** – Home  
+2. **commands.html** – Commands  
+3. **premium.html** – Premium Plans (exact features below)  
+4. **support.html** – Support & Lifetime  
+5. **legal.html** – ToS, Privacy, Refunds  
+6. **404.html** – Custom fallback (MUST BE IN ROOT)
+
+All pages share:
+- **Sticky navbar**: Home | Commands | Premium | Support | Legal
+- **Same footer**
+- **404.html** must be styled like other pages and in root directory
+
+---
+
+**PAGE 1: index.html (Home)**
+- Hero:
+  - "Nexio" (large, bold)
+  - "A powerful Discord bot for moderation, leveling, fun, and more."
+  - "Add to Server" button → invite link
+- Intro:
+  "Nexio is built by Mars in Python. It includes moderation, leveling with custom rank cards, partner tracking, shop management, and autoresponders."
+- 4 cards:
+  - Moderation
+  - Leveling
+  - Fun & Utility
+  - Premium
+- Footer
+
+---
+
+**PAGE 2: commands.html**
+- H1: "Commands"
+- 6 collapsible sections:
+  1. **Moderation** → kick/k, ban/b, mute/m, clear/purge
+  2. **Leveling** → rank, lb, rlevel add/remove/list, rankcard setbg/setcolors
+  3. **Fun** → meme, 8ball, joke
+  4. **Utility** → help, serverinfo, userinfo, poll, setselfprefix
+  5. **Partners** → partner-list, affiliate-list
+  6. **Shop** → addshopitem, editshopitem, removeshopitem
+- Format: `command` – short description
+- Clean accordion
+
+---
+
+**PAGE 3: premium.html**
+- H1: "Premium Plans"
+- Intro: "Monthly via Ko-fi. Lifetime via support server."
+- **Exact Feature Table** (stacks on mobile):
+  | Feature                        | Free ($0/forever) | Basic ($3/mo) | Plus ($5/mo) | Pro ($10/mo) |
+  |--------------------------------|-------------------|---------------|--------------|--------------|
+  | Basic moderation               | Yes               | Yes           | Yes          | Yes          |
+  | Leveling system                | Yes               | Yes           | Yes          | Yes          |
+  | Standard rank cards            | Yes               | Yes           | Yes          | Yes          |
+  | Fun commands                   | Yes               | Yes           | Yes          | Yes          |
+  | Custom rank card colors        | Yes               | Yes           | Yes          | Yes          |
+  | Priority support               |                   | Yes           | Yes          | Yes          |
+  | Custom branding                |                   | Yes           | Yes          | Yes          |
+  | Advanced autoresponders        |                   | Yes           | Yes          | Yes          |
+  | Extended shop options          |                   | Yes           | Yes          | Yes          |
+  | Priority command queue         |                   | Yes           | Yes          | Yes          |
+  | Custom bot status              |                   | Yes           | Yes          | Yes          |
+  | Dedicated support channel      |                   |               | Yes          | Yes          |
+  | Custom rank card backgrounds   |                   |               | Yes          | Yes          |
+  | Extended leveling rewards      |                   |               | Yes          | Yes          |
+  | Early access to features       |                   |               |              | Yes          |
+  | Premium role in support server |                   |               |              | Yes          |
+  | Custom command aliases         |                   |               |              | Yes          |
+  | Analytics dashboard            |                   |               |              | Yes          |
+
+- **Pricing & Buy**:
+  > **Monthly (Ko-fi)**  
+  > Basic: $3/mo → [Subscribe on Ko-fi](https://ko-fi.com/summary/526bf852-3092-40a0-b86a-1f6296088990)  
+  > Plus: $5/mo → [Subscribe on Ko-fi](https://ko-fi.com/summary/508bf8ea-3b9f-4421-8191-a5d022d96475)  
+  > Pro: $10/mo → [Subscribe on Ko-fi](https://ko-fi.com/summary/bf79a95b-d3bb-4920-be6e-95ab5de26235)  
+  >
+  > **Lifetime (Support Server)**  
+  > Basic: $19.99 | Plus: $39.99 | Pro: $59.99  
+  > → Join server and open a ticket to buy.
+- Button: "Join Support Server" → https://discord.gg/vMWuDvk4dZ
+
+---
+
+**PAGE 4: support.html**
+- H1: "Support & Lifetime Keys"
+- "Monthly Ko-fi users: Access is automatic."
+- **Lifetime Steps**:
+  1. Join the server
+  2. Open a ticket
+  3. Request your tier
+  4. Pay via PayPal or Cash App
+  5. Key activated
+- Button: "Join Support Server" → https://discord.gg/vMWuDvk4dZ
+- FAQ:
+  - Upgrade from monthly? → Yes, buy lifetime.
+  - Refunds? → 30 days if unused.
+  - Issues with Ko-fi? → Open a ticket.
+
+---
+
+**PAGE 5: legal.html**
+- H1: "Legal"
+- **Terms of Service**
+  - You must follow Discord’s ToS.
+  - Do not abuse commands.
+  - Premium is per-server.
+  - No refunds after key use.
+- **Privacy Policy**
+  - We store: server ID, user ID, command usage.
+  - No personal data collected.
+  - Data used only for bot function.
+  - You can request deletion via support.
+- **Refund Policy**
+  - 30-day refund if key is unused.
+  - No refund after activation.
+  - Ko-fi monthly: cancel anytime.
+  - Lifetime: contact within 30 days.
+- Clean paragraphs.
+
+---
+
+**PAGE 6: 404.html (CRITICAL – MUST BE IN ROOT)**
+- H1: "404 – Page Not Found"
+- Message: "Sorry, we couldn’t find that page. Let’s get you back on track."
+- Buttons:
+  - "Go Home" → /
+  - "View Commands" → /commands.html
+  - "Premium Plans" → /premium.html
+  - "Support Server" → https://discord.gg/vMWuDvk4dZ
+- Full navbar, footer, same downtown purple theme
+- **Must be named `404.html` and in root directory**
+
+---
+
+**SHARED ELEMENTS**
+- **Navbar** (sticky):
+  - Logo: "Nexio"
+  - Links: Home | Commands | Premium | Support | Legal
+  - Mobile: hamburger menu
+- **Footer**:
+  - "© 2025 Nexio • Built with Python by Mars • <a href='https://discord.gg/vMWuDvk4dZ'>Support & Lifetime</a> • <a href='https://ko-fi.com/uximixmars'>Monthly on Ko-fi</a>"
+
+**GitHub Pages Optimization**:
+- Include `_config.yml`:
+  ```yaml
+  title: Nexio
+  description: Discord bot for moderation, leveling, and more
+  baseurl: ""
+  url: ""
